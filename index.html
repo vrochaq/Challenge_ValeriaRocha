@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class = "header">
+        <img class = "header_logo"src = "assets/Logo.png">
+    </header>
+    <main class = "principal">
+        <div class = "contenido">
+            <textarea class = "valor__caja__input" id="inputTexto" placeholder = "Ingresa el texto aquí"></textarea>
+            <p class = "botones__des__encriptar_subtitulo">Solo letras minúsculas y sin acentos</p>
+            <div class = "botones__des__encriptar">
+                <button onclick = "encriptar()" class = "botones__encriptar">Encriptar</button>
+                <button onclick = "desencriptar()" class = "botones__desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div clas = "Caja__Texto__Out">
+            <textarea id="outputTexto" class = "Caja_Texto_Des" readonly></textarea>
+            <button onclick = "copiar()" class = "botones_copiar">Copiar</button>
+        </div>
+    </main>
+    <footer class = "footer">
+        <p>Desarrollado por Valeria Rocha</p>
+    </footer>
+    <script src = "app.js" defer></script>
+</body>
+</html>
